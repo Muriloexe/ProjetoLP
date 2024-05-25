@@ -11,3 +11,6 @@ Para isso dentro do cmd:
 1º Execute o comando:
 npm install http-server
 2º Ao abrir o projeto no VSCode, abrir um terminal e entrar no diretório e executar o comando http-server
+
+
+-Atualizar o CSS
