@@ -2,25 +2,144 @@
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
 }
+h1{
 
-body {
-    background-image:url("assets/css/paisagem.jpg") ;
+}
+#top{
+    display: flex;
+}
+body{
+    display: flex;
 }
 #title{
     display: flex;
     flex-direction: row;
     padding: 2rem;
+    justify-content: space-between;
     
 }
 #title h1{
     font-weight: 600;
 
 }
-#title img{
 
+#left-column{
+    margin: .0.02rem;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(64, 64, 64);
+    padding: 4rem;
+    height: 100vh;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    border-radius: 0.2rem;
+    top: 0;
+    position: sticky;
 }
 
+#cardButton{
+    margin:  1rem ;
+    padding: 1rem;
+    border-radius: .75rem;
+    border-style: none;
+    letter-spacing: .15rem;
+    transition: all .3s;
+    overflow: hidden;
+    z-index: 1;
+    
+    &:after {
+    content: '';
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(64, 64, 64);
+    border-radius: 10rem;
+    z-index: -2;
+  }
+  &:before {
+    content: '';
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    color: rgb(64,64, 64);
+    background-color: rgb(64, 64, 64);
+    transition: all .3s;
+    border-radius: 10rem;
+    z-index: -1;
+
+  }
+  &:hover {
+    color: #f6f8fc;
+    background-color: rgb(64, 64, 64); 
+    box-shadow: rgba(138, 138, 138, 0.07) 0px 54px 55px, 
+                rgba(138, 138, 138, 0.07) 0px -12px 30px,
+                rgba(138, 138, 138, 0.07) 0px 4px 6px, 
+                rgba(138, 138, 138, 0.07) 0px 12px 13px, 
+                rgba(138, 138, 138, 0.07) 0px -3px 5px;
+
+
+    &:before {
+      width: 100%;
+    }
+  }
+}
+
+.div-content{
+    display: flex;
+}
+#header{
+    display: flex;
+    padding:6rem;
+    flex-direction: row;
+    align-items: center;
+    }
+#nextGenButton{
+    border-style: none;
+    border-radius: 1.8rem;
+    padding: 1rem;    
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 27px 50px, 
+                rgba(0, 0, 0, 0.12) 0px -12px 25px, 
+                rgba(0, 0, 0, 0.12) 0px 4px 3px, 
+                rgba(0, 0, 0, 0.17) 0px 12px 6.5px, 
+                rgba(0, 0, 0, 0.09) 0px -3px 2.5px;
+    text-transform: uppercase;
+    letter-spacing: .15rem;
+    transition: all .3s;
+    overflow: hidden;
+    z-index: 1;
+
+    &:after {
+    content: '';
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(64, 64, 64);
+    border-radius: 10rem;
+    z-index: -2;
+  }
+  &:before {
+    content: '';
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: rgb(64, 64, 64);
+    transition: all .3s;
+    border-radius: 10rem;
+    z-index: -1;
+  }
+  &:hover {
+    background-color: rgb(64, 64, 64);
+    color: #f6f8fc;
+    &:before {
+      width: 100%;
+    }
+  }
+}
 .content {
+    justify-content: center;
     background-color: #f6f8fc;
     border: solid black 5rem 100vh;
     width: 100vw;
@@ -33,7 +152,10 @@ body {
     .content {
         max-width: 992px;
         height: auto;
-        margin: 1rem auto;
+        margin: 1rem;
         border-radius: 1rem;
+    }
+    .left-column{
+        height: 100vh;
     }
 }
