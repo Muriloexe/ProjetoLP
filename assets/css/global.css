@@ -1,5 +1,5 @@
 * {
-    font-family: 'Roboto', sans-serif;
+    font-family: Roboto, sans-serif;
     box-sizing: border-box;
 }
 #top{
@@ -115,11 +115,6 @@ body{
     background-color: rgb(64, 64, 64);
     border-radius: 10rem;
     z-index: -2;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 27px 50px, 
-                rgba(0, 0, 0, 0.12) 0px -12px 25px, 
-                rgba(0, 0, 0, 0.12) 0px 4px 3px, 
-                rgba(0, 0, 0, 0.17) 0px 12px 6.5px, 
-                rgba(0, 0, 0, 0.09) 0px -3px 2.5px;
   }
   &:before {
     content: '';
